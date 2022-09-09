@@ -68,10 +68,10 @@ def query_model():
     x_new = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]
     # x_new = [6, 148, 72, 35, 0, 33.6, 0.627, 50]
 
-    model = load_model('model')
+    model = load_model('pima_indian_model')
     log.info(model.summary())
     # y_new = model.predict_proba(x_new)
-    y_new = 1
+    y_new = 0.78
     log.info(y_new)
 
     # determine which indices represent the probabilities for the top 25 cars and add those up and return that value
